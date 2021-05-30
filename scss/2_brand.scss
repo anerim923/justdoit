@@ -1,0 +1,197 @@
+.brandWrap {
+    width:100%;
+    height:100%;
+    position:fixed;
+
+    .brandSection {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0px; 
+        left:0px;
+
+        article {
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0px;
+            left:0px;
+            z-index:1; 
+
+            .inner {
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0px; 
+                left:0px; 
+                transition:2s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    font: bold 1.5rem/1.5 'Noto Sans KR';
+                    color: #fff;
+                    margin-bottom: 3%;
+                    text-align: center;
+                }
+
+                .logoWrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background: #fff;
+                    padding: 4%;
+                    border-radius: 15px;
+                }
+
+                p {
+                    margin-top: 4%;
+                    font: bold 1.5rem 'Noto Sans KR';
+                    letter-spacing: 5px;
+                }
+            }
+
+            .btnWrapper {
+                padding-top: 40px;
+                width: 17%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    padding: 10px 30px;
+                    width:100%;
+                    border-radius: 10px;
+                    border: none;
+                    font: bold 1rem 'Noto Sans KR';
+                    box-shadow: 1px 1px 5px 1px #ccc;
+                    background: #fff;
+                    text-align: center;
+                    margin: 10px;
+                    color: #555;
+    
+                    &:hover {
+                        cursor: pointer;
+                        background: #555;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:nth-of-type(1) .inner {
+                background:url(../img/shopsolBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: 67%;
+                width: 100%;
+                height: 100vh;
+                clip-path:circle(0% at 70% 80%); 
+            }
+            &:nth-of-type(2) .inner {
+                background:url(../img/koyouBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(0% at 74% 80%); 
+            }
+            &:nth-of-type(3) .inner {
+                background:url(../img/BGFBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(0% at 78% 80%); 
+            }
+            &:nth-of-type(4) .inner {
+                background:url(../img/cuBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(0% at 82% 80%); 
+            }            
+        }
+
+        article.lower {           
+            z-index:2;
+
+            &:nth-of-type(1) .inner {
+                background:url(../img/shopsolBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: 67%;
+                width: 100%;
+                height: 100vh;
+                clip-path:circle(130% at 70% 80%); 
+            }
+            &:nth-of-type(2) .inner {
+                background:url(../img/koyouBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 74% 80%); 
+            }
+            &:nth-of-type(3) .inner {
+                background:url(../img/BGFBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 78% 80%); 
+            }
+            &:nth-of-type(4) .inner {
+                background:url(../img/cuBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 82% 80%); 
+            }            
+        }
+
+        article.upper {           
+            z-index:3;
+
+            &:nth-of-type(1) .inner {
+                background:url(../img/shopsolBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: 67%;
+                width: 100%;
+                height: 100vh;
+                clip-path:circle(130% at 70% 80%); 
+            }
+            &:nth-of-type(2) .inner {
+                background:url(../img/koyouBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 74% 80%); 
+            }
+            &:nth-of-type(3) .inner {
+                background:url(../img/BGFBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 78% 80%); 
+            }
+            &:nth-of-type(4) .inner {
+                background:url(../img/cuBack.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path:circle(130% at 82% 80%); 
+            }            
+        }
+    }
+}
+
+.brandUl li {
+    position:fixed;
+    top:80%; 
+    width:20px; 
+    height:20px; 
+    border-radius:50%; 
+    background:#fff;
+    margin-top:-10px;
+    margin-left:-10px;
+
+    &.on {background:#000;}
+
+    &:nth-of-type(1) {left:70%;}
+    &:nth-of-type(2) {left:74%;}
+    &:nth-of-type(3) {left:78%;}
+    &:nth-of-type(4) {left:82%;}
+
+    &:hover {cursor: pointer;}
+}

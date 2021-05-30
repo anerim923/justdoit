@@ -1,0 +1,504 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: top; }
+
+.back video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5; }
+
+#wrap {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -240px; }
+  #wrap .top {
+    width: 0%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  #wrap .right {
+    width: 1px;
+    height: 0%;
+    background: white;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+  #wrap .bottom {
+    width: 0%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
+  #wrap .left {
+    width: 1px;
+    height: 0%;
+    background: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px; }
+  #wrap .con {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none; }
+    #wrap .con .conInner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%; }
+      #wrap .con .conInner .dear {
+        font: 1.5rem 'Nanum Myeongjo';
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff; }
+      #wrap .con .conInner .anerim {
+        font: 2rem 'Nanum Myeongjo';
+        text-align: center;
+        color: #fff; }
+    #wrap .con .close1 {
+      font: bold 16px/1 'arial';
+      color: #ddd;
+      position: absolute;
+      top: 30px;
+      right: 30px; }
+      #wrap .con .close1:hover {
+        cursor: pointer; }
+
+#wrap2 {
+  width: 100%;
+  height: 0px;
+  background: black;
+  position: absolute;
+  left: 0%;
+  top: 45%;
+  margin-top: 0px; }
+  #wrap2 .close2 {
+    font: bold 16px/1 'arial';
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: none;
+    color: #ddd; }
+    #wrap2 .close2:hover {
+      cursor: pointer; }
+  #wrap2 .conInner2 {
+    width: 100%;
+    height: 100%; }
+    #wrap2 .conInner2 .dear2 {
+      text-align: center;
+      margin-top: 4%;
+      font: 1.5rem 'Nanum Myeongjo';
+      display: none;
+      color: #fff; }
+    #wrap2 .conInner2 .anerim2 {
+      text-align: center;
+      margin-top: 2%;
+      font: 2rem 'Nanum Myeongjo';
+      display: none;
+      color: #fff; }
+    #wrap2 .conInner2 .startNext {
+      text-align: center;
+      margin-top: 7%;
+      font: 1.2rem 'Noto Sans KR';
+      display: none;
+      color: #fff; }
+      #wrap2 .conInner2 .startNext:hover {
+        color: slateblue;
+        font-weight: bold;
+        cursor: pointer; }
+
+.btn1 {
+  display: block;
+  width: 380px;
+  height: 60px;
+  border: 1px solid white;
+  font: 1.2rem/60px 'Noto Sans KR';
+  color: #111;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 200px;
+  color: #fff;
+  border-radius: 15px;
+  animation-name: show;
+  animation-duration: 3s; }
+@keyframes show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .btn1:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer; }
+
+.btn2 {
+  display: block;
+  width: 380px;
+  height: 60px;
+  border: 1px solid white;
+  font: 1.2rem/60px 'Noto Sans KR';
+  color: #111;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  margin-left: 20px;
+  color: #fff;
+  border-radius: 15px;
+  animation-name: show;
+  animation-duration: 3s; }
+@keyframes show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .btn2:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer; }
+
+.brandWrap {
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+  .brandWrap .brandSection {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+    .brandWrap .brandSection article {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1; }
+      .brandWrap .brandSection article .inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: 2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .brandWrap .brandSection article .inner h2 {
+          font: bold 1.5rem/1.5 'Noto Sans KR';
+          color: #fff;
+          margin-bottom: 3%;
+          text-align: center; }
+        .brandWrap .brandSection article .inner .logoWrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: #fff;
+          padding: 4%;
+          border-radius: 15px; }
+        .brandWrap .brandSection article .inner p {
+          margin-top: 4%;
+          font: bold 1.5rem 'Noto Sans KR';
+          letter-spacing: 5px; }
+      .brandWrap .brandSection article .btnWrapper {
+        padding-top: 40px;
+        width: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .brandWrap .brandSection article .btnWrapper a {
+          padding: 10px 30px;
+          width: 100%;
+          border-radius: 10px;
+          border: none;
+          font: bold 1rem 'Noto Sans KR';
+          box-shadow: 1px 1px 5px 1px #ccc;
+          background: #fff;
+          text-align: center;
+          margin: 10px;
+          color: #555; }
+          .brandWrap .brandSection article .btnWrapper a:hover {
+            cursor: pointer;
+            background: #555;
+            color: #fff; }
+      .brandWrap .brandSection article:nth-of-type(1) .inner {
+        background: url(../img/shopsolBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 67%;
+        width: 100%;
+        height: 100vh;
+        clip-path: circle(0% at 70% 80%); }
+      .brandWrap .brandSection article:nth-of-type(2) .inner {
+        background: url(../img/koyouBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(0% at 74% 80%); }
+      .brandWrap .brandSection article:nth-of-type(3) .inner {
+        background: url(../img/BGFBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(0% at 78% 80%); }
+      .brandWrap .brandSection article:nth-of-type(4) .inner {
+        background: url(../img/cuBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(0% at 82% 80%); }
+    .brandWrap .brandSection article.lower {
+      z-index: 2; }
+      .brandWrap .brandSection article.lower:nth-of-type(1) .inner {
+        background: url(../img/shopsolBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 67%;
+        width: 100%;
+        height: 100vh;
+        clip-path: circle(130% at 70% 80%); }
+      .brandWrap .brandSection article.lower:nth-of-type(2) .inner {
+        background: url(../img/koyouBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 74% 80%); }
+      .brandWrap .brandSection article.lower:nth-of-type(3) .inner {
+        background: url(../img/BGFBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 78% 80%); }
+      .brandWrap .brandSection article.lower:nth-of-type(4) .inner {
+        background: url(../img/cuBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 82% 80%); }
+    .brandWrap .brandSection article.upper {
+      z-index: 3; }
+      .brandWrap .brandSection article.upper:nth-of-type(1) .inner {
+        background: url(../img/shopsolBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 67%;
+        width: 100%;
+        height: 100vh;
+        clip-path: circle(130% at 70% 80%); }
+      .brandWrap .brandSection article.upper:nth-of-type(2) .inner {
+        background: url(../img/koyouBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 74% 80%); }
+      .brandWrap .brandSection article.upper:nth-of-type(3) .inner {
+        background: url(../img/BGFBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 78% 80%); }
+      .brandWrap .brandSection article.upper:nth-of-type(4) .inner {
+        background: url(../img/cuBack.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        clip-path: circle(130% at 82% 80%); }
+
+.brandUl li {
+  position: fixed;
+  top: 80%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  margin-top: -10px;
+  margin-left: -10px; }
+  .brandUl li.on {
+    background: #000; }
+  .brandUl li:nth-of-type(1) {
+    left: 70%; }
+  .brandUl li:nth-of-type(2) {
+    left: 74%; }
+  .brandUl li:nth-of-type(3) {
+    left: 78%; }
+  .brandUl li:nth-of-type(4) {
+    left: 82%; }
+  .brandUl li:hover {
+    cursor: pointer; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(45deg, #320c9b, #000000);
+  overflow: hidden; }
+  body #tap {
+    width: 800px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid slategrey;
+    padding-top: 70px;
+    z-index: 4; }
+    body #tap dl dt {
+      width: calc(100% / 3);
+      height: 70px;
+      position: absolute;
+      top: 0px; }
+      body #tap dl dt:nth-of-type(1) {
+        left: calc((100% / 3) * 0); }
+      body #tap dl dt:nth-of-type(2) {
+        left: calc((100% / 3) * 1); }
+      body #tap dl dt:nth-of-type(3) {
+        left: calc((100% / 3) * 2); }
+      body #tap dl dt a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #020111;
+        color: #fff;
+        font: 1rem/70px 'Noto Sans KR';
+        letter-spacing: 8px;
+        text-align: center; }
+        body #tap dl dt a.on {
+          background: #2a256d;
+          color: #fff; }
+    body #tap dl dd {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px;
+      display: none;
+      perspective: 700px; }
+      body #tap dl dd.on {
+        display: block; }
+      body #tap dl dd:nth-of-type(1) .pic {
+        width: 100%;
+        height: 17vmax;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.5s;
+        transform: rotateX(-180deg);
+        background: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      body #tap dl dd:nth-of-type(2) .pic {
+        width: 100%;
+        height: 17vmax;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.5s;
+        transform: rotateX(-180deg);
+        background: url(../img/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      body #tap dl dd:nth-of-type(3) .pic {
+        width: 100%;
+        height: 17vmax;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.5s;
+        transform: rotateX(-180deg);
+        background: url(../img/3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      body #tap dl dd > p {
+        font: 1rem/1.8 'Noto Sans KR';
+        color: #fff;
+        margin-bottom: 25px;
+        opacity: 0;
+        transition: 0.5s; }
+      body #tap dl dd > a {
+        display: block;
+        width: 80%;
+        height: 50px;
+        background: snow;
+        font: bold 1.5rem/50px 'Song Myung';
+        color: #444;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s 0.5s;
+        transform: translateX(200px); }
+      body #tap dl dd.on .pic {
+        opacity: 1;
+        transform: rotateX(0deg); }
+      body #tap dl dd.on > p {
+        opacity: 1; }
+      body #tap dl dd.on > a {
+        opacity: 1;
+        transform: translateX(0px); }
+  body #tap_btnWrap {
+    margin-top: 7%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between; }
+    body #tap_btnWrap > a {
+      color: #fff;
+      font: 0.8rem 'Noto Sans KR'; }
+      body #tap_btnWrap > a:hover {
+        cursor: pointer;
+        font-weight: bold; }
+  body .circle1 {
+    width: 2000px;
+    height: 201px;
+    background: url(../img/circle.png) repeat-x 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    animation: wave linear 7s infinite; }
+  body .circle2 {
+    width: 2000px;
+    height: 201px;
+    background: url(../img/circle.png) repeat-x 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    animation: wave linear 8s infinite; }
+  body .circle3 {
+    width: 2000px;
+    height: 201px;
+    background: url(../img/circle.png) repeat-x 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    animation: wave linear 9s infinite; }
+@keyframes wave {
+  0% {
+    background-position: 0px 0px; }
+  50% {
+    background-position: 1000px 150px; }
+  100% {
+    background-position: 2000px 0px; } }
+  @media screen and (max-width: 999px) {
+    body #tap {
+      width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */

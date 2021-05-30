@@ -1,0 +1,224 @@
+.back{
+    video {
+        position:absolute;
+        left:0px;
+        top:0px;
+        min-width:100%;
+        min-height:100%;
+        opacity:0.5;
+    }
+}
+
+#wrap {
+    width:800px;
+    height:400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-400px;
+    margin-top:-240px;
+
+    .top {
+        width:0%;
+        height:1px;
+        background:white;
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+
+    .right {
+        width:1px;
+        height:0%;
+        background:white;
+        position:absolute;
+        right:0px;
+        top:0px;
+    }
+
+    .bottom {
+        width:0%;
+        height:1px;
+        background:white;
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+    
+    .left {
+        width:1px;
+        height:0%;
+        background:white;
+        position:absolute;
+        left:0px;
+        bottom:0px;
+    }
+    
+    .con {
+        width:100%; 
+        height:100%;
+        background:black;
+        position:absolute;
+        top:0px;
+        left:0px;
+        display:none;
+
+        .conInner {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            .dear {
+                font: 1.5rem 'Nanum Myeongjo';
+                margin-bottom: 20px;
+                text-align: center;
+                color: #fff;
+            }
+            .anerim {
+                font: 2rem 'Nanum Myeongjo';
+                text-align: center;
+                color: #fff;
+            }
+        }
+        
+        .close1 {
+            font:bold 16px/1 'arial';
+            color:#ddd;
+            position:absolute;
+            top:30px;
+            right:30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }    
+}
+
+#wrap2 {
+    width:100%; 
+    height:0px; 
+    background:black; 
+    position:absolute; 
+    left:0%; 
+    top:45%; 
+    margin-top:0px;
+
+    .close2 {
+        font:bold 16px/1 'arial';
+        position: absolute;
+        top:40px;
+        right :50px;
+        display: none;
+        color: #ddd;   
+
+        &:hover {
+        cursor: pointer;
+        }
+    }
+
+    .conInner2 {
+        width: 100%;
+        height: 100%;
+
+        .dear2 {
+            text-align: center;
+            margin-top: 4%;
+            font: 1.5rem 'Nanum Myeongjo';
+            display: none;
+            color: #fff;
+        }
+
+        .anerim2 {
+            text-align: center;
+            margin-top: 2%;
+            font: 2rem 'Nanum Myeongjo';
+            display: none;
+            color: #fff;
+        }
+
+        .startNext {
+            text-align: center;
+            margin-top: 7%;
+            font: 1.2rem 'Noto Sans KR';
+            display: none;
+            color: #fff;
+
+            &:hover {
+                color: slateblue;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn1 {
+    display:block;
+    width:380px;
+    height:60px;
+    border: 1px solid white;
+    font: 1.2rem/60px 'Noto Sans KR';
+    color:#111; 
+    text-align:center;
+    position:absolute; top:50%;
+    left:50%;
+    margin-left:-400px;
+    margin-top:200px;
+    color: #fff;
+    border-radius: 15px;
+    animation-name: show;
+    animation-duration: 3s;
+
+    @keyframes show {
+        from {
+          opacity: 0;
+        }      
+        to {
+          opacity: 1;
+        }
+      }
+
+    &:hover {
+        background-color: white;
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+.btn2 {
+    display:block;
+    width:380px;
+    height:60px;
+    border: 1px solid white;
+    font: 1.2rem/60px 'Noto Sans KR';
+    color:#111;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:200px;
+    margin-left:20px;
+    color: #fff;
+    border-radius: 15px;
+    animation-name: show;
+    animation-duration: 3s;
+
+    @keyframes show {
+        from {
+          opacity: 0;
+        }      
+        to {
+          opacity: 1;
+        }
+      }
+
+    &:hover {
+        background-color: white;
+        color: #000;
+        cursor: pointer;
+    }
+}
